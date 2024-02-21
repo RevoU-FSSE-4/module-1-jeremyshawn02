@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #202020;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #303030;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+header ul li a:hover{
+    color: gray;
+    transition: 0.3s;
+}
+
+header ul li img{
+    width: 25px;
+    display: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube{
+    display: flex;
+    text-align: end;
+    gap: 50px;
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #242424;
+    padding: 30px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.youtube:hover{
+    background-color: #303030;
+    transition: 0.3s;
+}
+
+.youtube-text{
+    width: 400px;
+}
+
+.youtube-text span:first-child, .hobby-text span:first-child{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.youtube-text span a, .hobby-text span a{
+    color: yellow;
+}
+
+.hobby{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+
+    gap: 50px;
+    background-color: #242424;
+    transition: 0.3s;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.hobby:hover{
+    background-color: #303030;
+    transition: 0.3s;
+}
+
+.hobby-text{
+    width: 400px;
+}
+
+.contact-form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group{
+    margin-top: 25px;
+    gap: 10px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group label, .gender-input span{
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.input-group input{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus{
+    background-color: #dbdbdb;
+    transition: 0.3s;
+}
+
+.gender-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.gender-input div{
+    margin-top: 10px;
+}
+
+input[type="submit"]{
+    border: none;
+    padding: 10px 5px;
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #c2c2c2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover{
+    background-color: #a7a7a7;
+    transition: 0.3s;
+}
+
+footer{
+    text-align: center;
+    padding: 50px 0;
+    background-color: #303030;
+}
+
+@media only screen and (max-width: 950px) {
+    .youtube, .hobby{
+        flex-direction: column;
+    }
+
+    .links{
+        display: none;
+    }
+
+    header ul li img{
+        display: inline;
+    }
+}

@@ -4,50 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>My Website</title>
+    <link rel="stylesheet" href="test.css">
 </head>
 
 <body>
-    <h1>Welcome to the test page</h1>
-    <p>Here is a list of things you can do:</p>
-    <ul>
-        <li>Welcome to my page, here's the <a href="test.php">test.php</a> page</li>
-        <li>Test the <a href="test2.php">test2.php</a> page</li>
-        <li>Test the <a href="test3.php">test3.php</a> page</li>
-    </ul>
+    <header class="navbar">
+        <h1>Jeremy Shawn</h1>
+        <ul>
+            <li class="links"><a href="#">My Projects</a></li>
+            <li class="links"><a href="#">About Me</a></li>
+            <li class="links"><a href="#">Contact</a></li>
+            <li><img src="Hamburger_icon.svg.png" alt=""></li>
+        </ul>
+    </header>
 
-    <h2>Youtube link</h2>
-    <p>Here is a link to a youtube video</p>
-    <a href="https://youtube.com/@shawn.123?si=I8NvXBniNWmJfRSd">Shawn!</a>
-
-    <h2>Image</h2>
-    <p>Here is an image </p>
-    <img src="Untitled design (16).png" alt="chat" height="200">
-
-    <h2>Video</h2>
-    <p>Here is a video of the content</p>
-    <video width="700px" controls autoplay muted loop>
-        <source src="videoplayback.mp4" type="video/mp4">
-    </video>
-
-    <h2>Form</h2>
-    <p>Here is a Form for your validation</p>
-    <Form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email"><br><br>
-        <label for="password">password:</label>
-        <input type="password" id="password" name="password"><br><br>
-        <div class="form-check">
-            <p>Please select your gender</p><br>
-            <input type="radio" id="gender" name="gender" value="male">
-            <label for="age1">male</label><br>
-            <input type="radio" id="gender" name="gender" value="female">
-            <label for="age2">female</label><br><br>
+    <main>
+        <h1>Welcome to my website!</h1>
+    
+        <div class="youtube">
+            <div class="youtube-text">
+                <span>I do youtube streams!</span> <br>
+                <p>Being a youtuber has always been my dream, so now I do livestreams during my free time! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi provident harum porro iure! A quo totam aut laudantium rerum excepturi.</p> <br>
+                <span>Click <a href="">here</a> to go to my YouTube channel</span>
+            </div>
+            <img src="Untitled design (16).png" alt="chat" height="200">
         </div>
-        <input type="submit" value="Submit">
-    </Form>
+
+        <div class="hobby">
+            <video width="450px" controls autoplay muted loop>
+                <source src="videoplayback.mp4" type="video/mp4">
+            </video>
+            <div class="hobby-text">
+                <span>I like playing basketball</span> <br>
+                <p>Basketball has been my hobby since I was a child. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quos libero harum? Aperiam temporibus dicta harum quaerat nam porro inventore ratione vitae necessitatibus autem. Accusantium molestiae odit repellendus voluptatum distinctio.</p> <br>
+                <span>Click <a href="">here</a> to go to my YouTube channel</span>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Drop your contact here 👇</h2>
+            <form action="">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+    
+                <div class="input-group">
+                    <label for="name">Email</label>
+                    <input type="text" name="name" id="name">
+                </div>
+    
+                <div class="input-group">
+                    <label for="name">Phone Number</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                
+                <div class="gender-input">
+                    <span for="gender">Gender</span>
+                    <div>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Male</label>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Female</label>
+                    </div>
+                    
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        Jeremy Shawn @ 2024
+    </footer>
+    
 
 </body>
 
